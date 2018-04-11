@@ -1,6 +1,7 @@
 # Emils Webbod NPM starter
 
-https://travis-ci.org/EmilsWebbod/ewb-npm-starter.svg?branch=master
+[![Build Status](https://travis-ci.org/EmilsWebbod/ewb-npm-starter.svg?branch=master)](https://travis-ci.org/EmilsWebbod/ewb-npm-starter)
+[![Coverage Status](https://coveralls.io/repos/github/EmilsWebbod/ewb-npm-starter/badge.svg?branch=master)](https://coveralls.io/github/EmilsWebbod/ewb-npm-starter?branch=master)
 
 ## Synopsis
 
