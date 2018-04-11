@@ -1,6 +1,6 @@
 {
-  "name": "ewb-npm-starter",
-  "version": "1.0.0",
+  "name": "@ewb/ewb-npm-starter",
+  "version": "0.1.0",
   "description": "Simple npm package starter",
   "main": "index.js",
   "engines": {

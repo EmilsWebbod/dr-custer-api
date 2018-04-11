@@ -6,11 +6,21 @@ This project is to easy create a node module package from scratch. No need to cr
 
 ## Installation
 
-'npm install'
+```
+npm install
+```
 
 ## Tests
 
-'npm test'
+```
+npm test
+```
+
+## Publish
+
+```
+npm publish --access=public
+```
 
 ## License
 
