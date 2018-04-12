@@ -8,6 +8,7 @@
   },
   "scripts": {
     "test": "nyc ava",
+    "test:watch": "npm test -- --watch",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
