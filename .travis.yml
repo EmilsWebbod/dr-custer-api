@@ -9,4 +9,4 @@ install:
 script:
   - npm test
 
-after_script: npm run coverage
+after_script: npm run coveralls
