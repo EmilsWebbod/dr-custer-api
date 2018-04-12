@@ -7,8 +7,8 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "ava",
-    "cover": "nyc ava"
+    "test": "nyc ava",
+    "cover": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
