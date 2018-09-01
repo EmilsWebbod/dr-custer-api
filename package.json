@@ -1,43 +1,67 @@
 {
-  "name": "@ewb/ewb-npm-starter",
+  "name": "@ewb/dr-custer-api",
   "version": "0.1.0",
-  "description": "Simple npm package starter",
-  "main": "index.js",
+  "description": "Create Update Delete REST API connector",
+  "main": "index.ts",
   "engines": {
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "nyc ava",
+    "storybook": "start-storybook -p 9009 -s stories",
+    "test": "nyc ava-ts",
     "test:watch": "npm test -- --watch",
     "coveralls": "nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EmilsWebbod/ewb-npm-starter.git"
+    "url": "git+https://github.com/EmilsWebbod/dr-custer-api.git"
   },
   "author": "Emil A. Olsen <emil@webbod.no> (http://www.github.com/EmilsWebbod)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/EmilsWebbod/ewb-npm-starter/issues"
+    "url": "https://github.com/EmilsWebbod/dr-custer-api/issues"
   },
   "ava": {
     "files": [
-      "index.spec.js",
-      "src/**/*spec.js"
+      "index.spec.ts",
+      "/src/**/*.spec.ts"
     ],
     "require": [
-      "babel-register"
+      "ts-node/register"
+    ],
+    "extensions": [
+      "js",
+      "ts"
     ],
     "inherit": true,
     "verbose": true
   },
-  "homepage": "https://github.com/EmilsWebbod/ewb-npm-starter#readme",
+  "homepage": "https://github.com/EmilsWebbod/dr-custer-api#readme",
   "devDependencies": {
-    "ava": "^1.0.0-beta.3",
-    "babel-register": "^6.26.0",
+    "@storybook/react": "^4.0.0-alpha.20",
+    "@types/lodash.isequal": "^4.5.3",
+    "@types/lodash.throttle": "^4.1.4",
+    "@types/react": "^16.4.13",
+    "@types/uuid": "^3.4.4",
+    "ava": "^1.0.0-beta.8",
+    "ava-ts": "^0.25.1",
+    "awesome-typescript-loader": "^5.2.0",
+    "babel-loader": "^8.0.0",
     "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
-    "nyc": "^11.6.0"
+    "nyc": "^11.6.0",
+    "react-dom": "^16.4.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.0.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@types/qs": "^6.5.1",
+    "@types/storybook__react": "^3.0.9",
+    "lodash.isequal": "^4.5.0",
+    "lodash.throttle": "^4.1.1",
+    "qs": "^6.5.2",
+    "react": "^16.4.2",
+    "styled-components": "^3.4.5",
+    "uuid": "^3.3.2"
+  }
 }
