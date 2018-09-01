@@ -1,8 +1,9 @@
 {
-  "name": "@ewb/dr-custer-api",
+  "name": "dr-custer-api",
   "version": "0.1.0",
   "description": "Create Update Delete REST API connector",
   "main": "index.ts",
+  "public": true,
   "engines": {
     "node": ">=8.0.0"
   },
@@ -42,7 +43,9 @@
     "@types/lodash.isequal": "^4.5.3",
     "@types/lodash.throttle": "^4.1.4",
     "@types/react": "^16.4.13",
+    "@types/storybook__react": "^3.0.9",
     "@types/uuid": "^3.4.4",
+    "@types/qs": "^6.5.1",
     "ava": "^1.0.0-beta.8",
     "ava-ts": "^0.25.1",
     "awesome-typescript-loader": "^5.2.0",
@@ -55,13 +58,17 @@
     "typescript": "^3.0.3"
   },
   "dependencies": {
-    "@types/qs": "^6.5.1",
-    "@types/storybook__react": "^3.0.9",
     "lodash.isequal": "^4.5.0",
     "lodash.throttle": "^4.1.1",
     "qs": "^6.5.2",
     "react": "^16.4.2",
     "styled-components": "^3.4.5",
     "uuid": "^3.3.2"
-  }
+  },
+  "keywords": [
+    "React",
+    "API",
+    "REST",
+    "CRUD"
+  ]
 }

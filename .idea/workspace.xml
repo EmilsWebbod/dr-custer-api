@@ -2,58 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fae63ac4-cd05-4f61-bc44-507c4e007578" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.storybook/addons.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/preview-head.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.storybook/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/apiRequest.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/confirm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/handleError.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/localStorage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/refreshAccessToken.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/CrudTemplate.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldCheckbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldDatePicker.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldImage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldRead.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldReferenceInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldReferenceSelect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldSelect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/FieldTextArea.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/defaultCrudFields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/fieldReference/ReferenceInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/fieldReference/ReferenceSelect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/fieldReference/SearchAndSelect.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crudFields/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CrudProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CrudModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Resource.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UpdateDelete.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/CreateCrudField.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/CrudModalComponent.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/SimpleCrud.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/SubdocumentReferenceInput.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/fields.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/crudModal/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/interface.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/resource/ResourceContext.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/resource/ResourceState.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/utils.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crudProvider/CrudContext.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/crudProvider/crudHeaders.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled/ReadChips.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled/StatusWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styled/styles.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/crud.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/get.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stories/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.spec.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -77,9 +28,12 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="LICENSE" value="1" />
+          <entry key="gitattributes" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="5" />
-          <entry key="json" value="10" />
+          <entry key="json" value="11" />
+          <entry key="md" value="1" />
           <entry key="ts" value="36" />
           <entry key="tsx" value="88" />
           <entry key="yml" value="1" />
@@ -88,9 +42,10 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="JSON" value="5" />
+          <entry key="JSON" value="6" />
           <entry key="JavaScript" value="5" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="Markdown" value="1" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="TypeScript" value="36" />
           <entry key="TypeScript JSX" value="88" />
           <entry key="YAML" value="1" />
@@ -99,10 +54,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="gitignore" value="13" />
           <entry key="html" value="14" />
           <entry key="js" value="34" />
-          <entry key="json" value="459" />
+          <entry key="json" value="477" />
           <entry key="jsx" value="43" />
+          <entry key="md" value="109" />
           <entry key="ts" value="423" />
           <entry key="tsx" value="1234" />
         </counts>
@@ -110,9 +67,11 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="14" />
-          <entry key="JSON" value="332" />
+          <entry key="JSON" value="350" />
           <entry key="JSX Harmony" value="43" />
           <entry key="JavaScript" value="34" />
+          <entry key="Markdown" value="109" />
+          <entry key="PLAIN_TEXT" value="13" />
           <entry key="TypeScript" value="423" />
           <entry key="TypeScript JSX" value="1234" />
           <entry key="tsconfig" value="127" />
@@ -130,12 +89,38 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/.storybook/config.js">
+            <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+                <state relative-caret-position="212">
+                  <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.storybook/config.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="357">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/package.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="119">
+                  <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/.gitattributes">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -145,30 +130,6 @@
                   <caret line="139" column="9" selection-start-line="139" selection-start-column="9" selection-end-line="139" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stories/crud.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/stories/get.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -190,7 +151,7 @@
             <entry file="file://$PROJECT_DIR$/src/components/UpdateDelete.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
-                  <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
+                  <caret line="300" column="18" lean-forward="true" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -208,22 +169,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/components/crudModal/CrudModalComponent.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/components/crudModal/SimpleCrud.tsx">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="238">
-                  <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+                  <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -296,8 +245,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/crud/updateDelete/crudModal/fields/FieldCheckbox.tsx" />
-        <option value="$PROJECT_DIR$/tsconfig.test.json" />
         <option value="$PROJECT_DIR$/src/UpdateDelete.tsx" />
         <option value="$PROJECT_DIR$/src/styles.tsx" />
         <option value="$PROJECT_DIR$/src/ResourceContext.tsx" />
@@ -337,7 +284,6 @@
         <option value="$PROJECT_DIR$/.storybook/config.jsx" />
         <option value="$PROJECT_DIR$/stories/index.html" />
         <option value="$PROJECT_DIR$/.storybook/addons.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/stories/crudProvider.ts" />
         <option value="$PROJECT_DIR$/crudFields/index.ts" />
         <option value="$PROJECT_DIR$/stories/crudProvider.tsx" />
@@ -347,6 +293,9 @@
         <option value="$PROJECT_DIR$/api/handleError.ts" />
         <option value="$PROJECT_DIR$/src/components/UpdateDelete.tsx" />
         <option value="$PROJECT_DIR$/.storybook/config.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -383,39 +332,6 @@
             <path>
               <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
               <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name=".storybook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="crudModal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dr-custer-api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dr-custer-api" type="462c0819:PsiDirectoryNode" />
-              <item name="stories" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -470,12 +386,12 @@
       <updated>1523470742043</updated>
       <workItem from="1523470743390" duration="2106000" />
       <workItem from="1535801143922" duration="5095000" />
-      <workItem from="1535806430811" duration="6412000" />
+      <workItem from="1535806430811" duration="8224000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13613000" />
+    <option name="totallyTimeSpent" value="15425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="80" y="-8" width="1848" height="1096" extended-state="6" />
@@ -492,7 +408,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="11" weight="0.32952183" />
@@ -509,29 +425,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/crudModal/fields.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/crudModal/SubdocumentReferenceInput.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="46" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/resource/ResourceContext.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/resource/ResourceState.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -812,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="49" column="10" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/crudModal/CrudModalComponent.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -862,7 +748,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/crudModal/SimpleCrud.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -909,7 +795,7 @@
     <entry file="file://$PROJECT_DIR$/src/components/UpdateDelete.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
+          <caret line="300" column="18" lean-forward="true" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -918,8 +804,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.storybook/config.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="34">
+            <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+          </first_editor>
+          <second_editor>
+            <markdownNavigatorState />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="52" selection-start-line="7" selection-start-column="52" selection-end-line="7" selection-end-column="52" />
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
         </state>
       </provider>
     </entry>
