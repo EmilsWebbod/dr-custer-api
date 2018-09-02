@@ -42,7 +42,7 @@ class UpdateDelete<T> extends React.Component<IUpdateDeleteProps<T>, IState> {
   constructor(props: IUpdateDeleteProps<T>) {
     super(props);
     this.getField = this.getField.bind(this);
-    this.setValue = this.setValue.bind(this);
+    this.setField = this.setField.bind(this);
     this.handleError = this.handleError.bind(this);
   }
 
@@ -87,7 +87,7 @@ class UpdateDelete<T> extends React.Component<IUpdateDeleteProps<T>, IState> {
         busy: true
       });
 
-      const response = await apiRequest<T>(id ? `c` : endpoint, {
+      const response = await apiRequest<T>(id ? `${endpoint}/${id}` : endpoint, {
         method:              id ? 'PUT' : 'POST',
         data,
         notificationMessage: id ? 'Lagrer…' : 'Oppretter…',
@@ -172,7 +172,7 @@ class UpdateDelete<T> extends React.Component<IUpdateDeleteProps<T>, IState> {
     }
   }
 
-  setValue<V>(name: string, value: V, label: ILabel) {
+  setField<V>(name: string, value: V, label: ILabel) {
     const { fields } = this.props;
     const { internalFields } = this.state;
 
@@ -274,7 +274,7 @@ class UpdateDelete<T> extends React.Component<IUpdateDeleteProps<T>, IState> {
       save,
       destroy,
       getField,
-      setValue,
+      setField,
       getSubdocument,
       addToSubdocument,
       deleteFromSubdocument,
@@ -287,7 +287,7 @@ class UpdateDelete<T> extends React.Component<IUpdateDeleteProps<T>, IState> {
       save,
       destroy,
       getField,
-      setValue,
+      setField,
       getSubdocument,
       addToSubdocument,
       deleteFromSubdocument,

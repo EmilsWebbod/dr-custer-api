@@ -126,7 +126,7 @@ export default class CrudModal<T> extends React.Component<
 
       if (shouldHideFieldIfConditionNotMet(f, methods)) {
         if (updateDeleteField.value) {
-          methods.setValue(f.name, null, '');
+          methods.setField(f.name, null, '');
         }
 
         return null;
@@ -136,13 +136,13 @@ export default class CrudModal<T> extends React.Component<
         shouldRenderCustomComponent(f) &&
         typeof f.renderComponent === 'function'
       ) {
-        return f.renderComponent(methods.setValue, methods.getField);
+        return f.renderComponent(methods.setField, methods.getField);
       }
 
       const extraProps = {
         value: updateDeleteField.value,
         label: updateDeleteField.label,
-        setValue: methods.setValue,
+        setField: methods.setField,
         getField: methods.getField,
         onChange: this.onChange(methods, f),
         onChangeReference: this.onChangeReference(methods, f)
@@ -210,13 +210,13 @@ export default class CrudModal<T> extends React.Component<
       value = e.currentTarget.files[0];
     }
 
-    methods.setValue(f.name, value, e.currentTarget.value);
+    methods.setField(f.name, value, e.currentTarget.value);
   };
 
   private onChangeReference = (
     methods: IUpdateDeleteFieldMethods,
     f: ICrudField
-  ) => (v: IFieldValues, l: ILabel) => methods.setValue(f.name, v, l);
+  ) => (v: IFieldValues, l: ILabel) => methods.setField(f.name, v, l);
 
   private onSave = (response: T & { _id: string }) => {
     const { onSave, onClose, refresh, endpoint } = this.props;

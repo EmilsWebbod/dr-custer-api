@@ -13,6 +13,7 @@ export default class FieldInput extends CrudTemplate {
       <input
         id={id}
         type={opts.type}
+        placeholder={opts.placeholder}
         value={value}
         onChange={this.handleEventChange}
         required={opts.required}

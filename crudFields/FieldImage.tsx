@@ -11,7 +11,7 @@ export default class FieldImage extends CrudTemplate {
         placeholder={opts.helpField || 'Legg til bilde'}
         onChange={e => {
           // todo: Fix image upload
-          // opts.setValue<File | File[]>(opts.name, e.target.value, '');
+          // opts.setField<File | File[]>(opts.name, e.target.value, '');
         }}
         {...opts.extra}
       />

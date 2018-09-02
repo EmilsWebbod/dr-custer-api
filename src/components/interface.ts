@@ -4,20 +4,13 @@ export interface IUpdateDeleteField<T> {
   readonly value: T;
   readonly label: ILabel;
   readonly name: string;
-  autoFocus?: boolean;
-  helpField?: string;
   changed?: boolean;
   forceSave?: boolean;
-  required?: boolean;
-  hidden?: boolean;
-  extra?: {
-    [key: string]: any;
-  };
 }
 
 export type ILabel = string;
 export type IGetField = <T>(value: string) => IUpdateDeleteField<T>;
-export type ISetValue = <T>(
+export type ISetField = <T>(
   name: string,
   value: T,
   label: ILabel,
@@ -63,7 +56,7 @@ export interface IUpdateDeleteInterface {
   save: (event?: any) => any;
   destroy: () => any;
   getField: IGetField;
-  setValue: ISetValue;
+  setField: ISetField;
   getSubdocument: IGetSubdocument;
   addToSubdocument: IAddToSubdocument;
   deleteFromSubdocument: IDeleteFromSubdocument;

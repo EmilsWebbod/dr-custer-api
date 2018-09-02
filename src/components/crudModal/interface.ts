@@ -6,7 +6,7 @@ import {
   IGetField,
   IGetSubdocument,
   ILabel,
-  ISetValue,
+  ISetField,
   ISubdocument,
   IUpdateDeleteField
 } from '../interface';
@@ -38,29 +38,29 @@ export type IFieldAllTypes =
 
 type FieldValue =
   | {
-      type: FileTypes;
-      value: File | File[] | null;
-    }
+  type: FileTypes;
+  value: File | File[] | null;
+}
   | {
-      type: StringTypes;
-      value: string;
-    }
+  type: StringTypes;
+  value: string;
+}
   | {
-      type: NumberTypes;
-      value: number;
-    }
+  type: NumberTypes;
+  value: number;
+}
   | {
-      type: BooleanTypes;
-      value: boolean;
-    }
+  type: BooleanTypes;
+  value: boolean;
+}
   | {
-      type: DateTypes;
-      value: Date;
-    }
+  type: DateTypes;
+  value: Date;
+}
   | {
-      type: ComponentTypes;
-      value: any;
-    };
+  type: ComponentTypes;
+  value: any;
+};
 
 export interface IItem {
   _id: string;
@@ -69,7 +69,7 @@ export interface IItem {
 
 export interface IUpdateDeleteFieldMethods {
   getField: IGetField;
-  setValue: ISetValue;
+  setField: ISetField;
 }
 
 export interface IUpdateDeleteSubdocumentMethods {
@@ -86,19 +86,26 @@ interface IReference {
 
 export type ICrudField = FieldValue &
   IUpdateDeleteField<IFieldValues> & {
-    disabled?: boolean;
-    required?: boolean;
-    emptyState?: JSX.Element | string;
-    hideIfSet?: string;
-    showIfSet?: string;
-    reference?: IReference;
-    referenceName?: string;
-    renderComponent?: (setValue: ISetValue, getField: IGetField) => JSX.Element;
-    options?: Array<{
-      label: string;
-      value: string;
-    }>;
+  extra?: {
+    [key: string]: any;
   };
+  required?: boolean;
+  hidden?: boolean;
+  autoFocus?: boolean;
+  helpField?: string;
+  placeholder?: string;
+  disabled?: boolean;
+  emptyState?: JSX.Element | string;
+  hideIfSet?: string;
+  showIfSet?: string;
+  reference?: IReference;
+  referenceName?: string;
+  renderComponent?: (setField: ISetField, getField: IGetField) => JSX.Element;
+  options?: Array<{
+    label: string;
+    value: string;
+  }>;
+};
 
 export type RenderableField = (writable?: boolean) => JSX.Element | null;
 
@@ -115,7 +122,7 @@ export interface Subdocument extends ISubdocument {
 }
 
 export type RenderWriteFieldOpts = ICrudField & {
-  setValue: ISetValue;
+  setField: ISetField;
   getField: IGetField;
   onChange: (event: SyntheticEvent<HTMLInputElement>) => void;
   onChangeReference: (value: IFieldValues, label: ILabel) => any;

@@ -4,6 +4,9 @@
 
 A simple React Crud project to connect your API and front-end.
 
+Testing with placeholder REST API:
+https://jsonplaceholder.typicode.com
+
 ## Installation
 
 ```

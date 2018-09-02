@@ -5,7 +5,7 @@ import defaultCrudFields from "../crudFields/defaultCrudFields";
 
 addDecorator(story => (
   <CrudProvider
-    url={`https://jsonplaceholder.typicode.com/todos`}
+    url={`https://jsonplaceholder.typicode.com`}
     noAuth
     crudComponents={defaultCrudFields}
   >

@@ -9,12 +9,13 @@ interface IQuery {
 
 interface ISearchInterface {
   busy: boolean;
+  search: (paginate?: boolean) => Promise<boolean | void>;
   query: (key: string, value: string) => any;
   hasQueried: boolean;
   results: any[];
   paginate: () => any;
   hasMore: boolean;
-  clear: () => any;
+  clear: () => Promise<any>;
   resultSpec: IQuery;
 }
 
@@ -46,11 +47,11 @@ export default class Search<T> extends React.Component<IProps, IState> {
   };
 
   state = {
-    query: this.props.query || {},
-    hasQueried: false,
-    busy: false,
-    results: [],
-    hasMore: true,
+    query:       this.props.query || {},
+    hasQueried:  false,
+    busy:        false,
+    results:     [],
+    hasMore:     true,
     operationID: uuid()
   };
 
@@ -85,7 +86,7 @@ export default class Search<T> extends React.Component<IProps, IState> {
     }
 
     this.setState({
-      busy: false,
+      busy:    false,
       results: paginate ? [...results, ...response] : response,
       hasMore: response.length === limit
     });
@@ -115,7 +116,7 @@ export default class Search<T> extends React.Component<IProps, IState> {
       {
         hasQueried: Object.keys(query).length > 0,
         query,
-        hasMore: true
+        hasMore:    true
       },
       () => this.search(false)
     );
@@ -125,12 +126,13 @@ export default class Search<T> extends React.Component<IProps, IState> {
     this.search(true);
   };
 
-  clear = () => {
-    this.setState(
+  clear = async () => {
+    await this.setState(
       {
-        query: {},
-        hasQueried: false,
-        operationID: uuid()
+        query:       {},
+        hasQueried:  false,
+        operationID: uuid(),
+        results:     []
       },
       this.search
     );
@@ -141,7 +143,7 @@ export default class Search<T> extends React.Component<IProps, IState> {
 
     return {
       ...query,
-      skip: '0',
+      skip:  '0',
       limit: results.length.toString()
     };
   };
@@ -149,11 +151,12 @@ export default class Search<T> extends React.Component<IProps, IState> {
   render() {
     const { children } = this.props;
     const { busy, hasQueried, results, hasMore } = this.state;
-    const { constructQuery, paginate, clear } = this;
+    const { constructQuery, paginate, clear, search } = this;
 
     return children({
       busy,
-      query: constructQuery,
+      search,
+      query:      constructQuery,
       hasQueried,
       results,
       hasMore,
